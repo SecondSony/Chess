@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+table {
+    padding: 2px;
+    border-spacing: 0px;
+}
+
+table td {
+    border: 1px solid #000;
+}
+
+tr {
+    display: flex;
+}
+
+td {
+    padding: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+td > img {
+    width: 100%;
+    height: 100%;
+}
+
+td > img:hover {
+    cursor: pointer;
+}
+
+#board {
+    width: 630px;
+    height: 630px;
+    margin: 10px auto;
+    box-sizing: content-box;
+    background-color: #aaa;
+}
+
+.game-field {
+    width: 583px;
+    height: 583px;
+    position: relative;
+    float: left;
+    background: grey;
+    border: 2px solid white;
+    border-image: initial;
+}
+
+.alphabetLetter {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    width: 72px;
+    height: 21.6px;
+    line-height: 21.6px;
+    font-size: 14px;
+}
+
+.numericLetter {
+    text-align: center;
+    color: white;
+    line-height: 72px;
+    font-size: 14px;
+}
+
+.light-orange {
+    background: #FFCE9F;
+}
+
+.dark-orange {
+    background: #D28B48;
+}
+
+.light-pink {
+    background-color: #faa;
+}
+
+.light-green {
+    background-color: #afa;
+}
+
+.cell {
+    width: 72px;
+    height: 72px;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+
+.game-panel {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    width: 630px;
+    margin: 0px auto;
+    background: #aaa;
+}
+
+.selected {
+    border: 1px solid #000;
+}
+
+.selected:hover {
+    border: 2px solid yellow;
+}
+
+#restart {
+    background-color: #ccc;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    color: yellowgreen;
+    width: 150px;
+}
+
+#restart img {
+    margin: auto;
+}
+
+#restart:hover {
+    cursor: pointer;
+    border: 2px solid greenyellow;
+}
+
+#info {
+    font-family: cursive;
+    font-size: 19px;
+    margin: 5px;
+    float: left;
+    width: 100%;
+}
